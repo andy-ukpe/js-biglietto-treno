@@ -25,7 +25,7 @@ if ( etaViaggiatore <= 17 ){
   console.log(prezzoScontato);
   document.getElementById('prezzo-unitario').innerHTML = 'Prezzo Unitario: ' + prezzoUnitario ;
   document.getElementById('prezzo-scontato').innerHTML = 'Prezzo Under 17: ' + prezzoScontato ;
-} else if (etaViaggiatore >= 65){
+} else if (etaViaggiatore >= 66){
   var scontoMajor = ( prezzoBiglietto * 40 ) / 100;
   console.log(scontoMajor);
   var calcoloSconto = (prezzoBiglietto - scontoMajor);
