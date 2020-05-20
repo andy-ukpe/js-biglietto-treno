@@ -14,6 +14,8 @@ var etaViaggiatore = (prompt("Inserire età del passegiero"))
 console.log(etaViaggiatore);
 
 // operatori logici
+if ( !isNaN(kilometri) && !isNaN(etaViaggiatore) ) {
+
 if ( etaViaggiatore <= 17 ){
   var scontoMinori =  (prezzoBiglietto * 20) / 100 ;
   console.log(scontoMinori);
@@ -35,4 +37,7 @@ if ( etaViaggiatore <= 17 ){
 } else {
   console.log(prezzoUnitario);
   document.getElementById('prezzo-unitario').innerHTML= 'Prezzo Unitario: ' + prezzoUnitario ;
+}
+} else{
+  alert('Attezione! Inserire caratteri numerici');
 }
